@@ -282,10 +282,15 @@
   top: 84px !important;
 }
 
-.swiper .swiper-pagination-bullet {
+.swiper-pagination-bullet {
   width: 12px;
   height: 12px;
+  margin: 0 12px 0 0 !important;
   background-color: #aaaaaa;
+}
+
+.swiper-pagination-bullet:last-child {
+  margin: 0 !important;
 }
 
 .swiper__fader {
