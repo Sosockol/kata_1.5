@@ -264,7 +264,12 @@
 
 /* Info__Expandable */
 .hideClass {
-  display: none;
+  display: none !important;
+}
+
+.expandable {
+  padding: 24px;
+  padding-bottom: 34px;
 }
 
 .info__title {
@@ -284,11 +289,14 @@
 .expandable__list {
   list-style: none;
   margin: 0;
-  padding: 24px;
+  margin-bottom: 24px;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 16px 24px;
+  height: 160px;
+  overflow: hidden;
 }
 
 .expandable__item {
@@ -308,4 +316,21 @@
 
 .expandable__icon {
   display: block;
+}
+
+.expandable__button {
+  line-height: 24px;
+  vertical-align: center;
+}
+
+.expandable__showAll {
+  display: inline-block;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+.expandable__arrow {
+  display: inline-block;
+  margin-right: 8px;
 }

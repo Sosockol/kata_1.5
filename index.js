@@ -9,28 +9,51 @@ const slider = new Swiper('.mySwiper', {
 });
 
 /* Ничего умнее не придумал что бы вначале не загружались сразу оба блока */
-document.querySelector('.info__swiper').hidden = true;
-document.querySelector('.info__expandable').hidden = true;
+const swiper = document.querySelector('.info__swiper');
+const expandable = document.querySelector('.info__expandable');
+const hideClass = 'hideClass'
+swiper.hidden = true;
+expandable.hidden = true;
 
 document.addEventListener('DOMContentLoaded', function () {
   if (768 > window.screen.width) {
-    document.querySelector('.info__swiper').classList.remove('hideClass');
-    document.querySelector('.info__expandable').classList.remove('hideClass');
-    document.querySelector('.info__swiper').hidden = false;
+    swiper.classList.remove(hideClass);
+    expandable.classList.remove(hideClass);
+    swiper.hidden = false;
   } else {
-    document.querySelector('.info__expandable').classList.remove('hideClass');
-    document.querySelector('.info__swiper').classList.remove('hideClass');
-    document.querySelector('.info__expandable').hidden = false;
+    expandable.classList.remove(hideClass);
+    swiper.classList.remove(hideClass);
+    expandable.hidden = false;
   }
 });
 
-window.addEventListener("resize", () => {
+window.addEventListener('resize', () => {
   if (768 > window.innerWidth) {
-    document.querySelector('.info__swiper').hidden = false;
-    document.querySelector('.info__expandable').hidden = true;
+    swiper.hidden = false;
+    expandable.hidden = true;
   } else {
-    document.querySelector('.info__swiper').hidden = true;
-    document.querySelector('.info__expandable').hidden = false;
+    swiper.hidden = true;
+    expandable.hidden = false;
   }
 });
 
+// Expand кнопка
+const expandButton = expandable.querySelector('.expandable__button');
+const expandList = expandable.firstElementChild;
+const buttonParagraph = expandButton.lastElementChild;
+
+const expandArrow = expandButton.firstElementChild;
+
+
+expandButton.addEventListener('click', () => {
+  let buttonText = buttonParagraph.textContent;
+  if (buttonText == 'Показать все') {
+    buttonParagraph.textContent = 'Свернуть';
+    expandArrow.style.transform = 'rotate(180deg)';
+    expandList.style.height = 'auto';
+  } else {
+    buttonParagraph.textContent = 'Показать все';
+    expandArrow.style.transform = 'rotate(0deg)';
+    expandList.style.height = '160px';
+  }
+});

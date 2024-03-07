@@ -238,7 +238,7 @@
 
 /* Swipable */
 .hideClass {
-  display: none;
+  display: none !important;
 }
 
 .info__title {
