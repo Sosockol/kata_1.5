@@ -1,0 +1,231 @@
+/* Хедер */
+.l-header {
+display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Кнопки */
+
+.defaultButton {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Левый кусок хедера */
+
+.navbar__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Для выравнивания всего хедера по иконкам */
+
+.navbar__logo {
+  overflow: visible;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+}
+
+/* Начало основной страницы */
+
+.l-main {
+  font-family: 'TT Lakes', sans-serif;
+  color: #1B1C21;
+  background-color: #F8F8F8;
+  padding-top: 42px;
+  height: 100vh;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.l-main__desktopHeader {
+  margin-bottom: 16px;
+}
+
+.desktopHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.l-main__h1 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  color: #1B1C21;
+}
+
+.l-main__h1::before {
+  content: '';
+  height: 40px;
+  border: 2px solid #41F6D7;
+  margin-right: 12px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.desktopHeader__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  font-weight: 600;
+  color: #1B1C21;
+}
+
+.desktopHeader__button {
+  display: flex;
+  align-items: center;
+}
+
+.defaultButton {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.defaultButton__name {
+  display: inline-block;
+  margin: 0;
+  margin-right: 8px;
+}
+
+.defaultButton__icon {
+  display: inline-block;
+}
+
+.desktopHeader__repair {
+  margin-right: 32px;
+}
+
+.desktopHeader__checkstatus {
+  margin-right: 48px;
+}
+
+/* Начало слайдера */
+
+.slider__list {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  flex-wrap: wrap;
+  font-size: 16px;
+  line-height: 24px;
+  white-space: nowrap;
+  margin: 0;
+  margin-right: 25px;
+  margin-left: 32px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slider__item {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 8px 17px;
+  border-radius: 6px;
+  color: #767679;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+
+.slider__item:hover, .slider__item:active {
+  border-color:#B8FFEC;
+  background: #FFFFFF;
+}
+
+/* Это фикс Чтобы нажимался весь контейнер */
+
+.slider__link:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__fader {
+  display: none;
+}
+
+/* Начало текста */
+
+
+.l-main__section {
+  display: flex;
+  margin-top: 32px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 40px;
+}
+
+.l-main__p1 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #1B1C21;
+  font-weight: 500;
+}
+
+.l-main__p2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #1B1C21;
+  font-weight: 500;
+}
+
+.l-main__readNext {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+.l-main__readNext::before {
+  display: inline-block;
+  content: url('../images/expand.svg');
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.l-main__pictureWraper {
+  text-align: center;
+  margin-left: 48px;
+}
+
+.l-main__picture {
+  width: 531px;
+  height: 307px;
+}

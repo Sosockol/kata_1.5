@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="public/favicon/CPS.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="public/styles/fontFace.css">
+    <link rel="stylesheet" href="public/styles/normalize.css">
+    <link rel="stylesheet" media="screen and (max-width: 767.98px)" href="public/styles/mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1119.98px)" href="public/styles/tablet.css">
+    <link rel="stylesheet" media="screen and (min-width: 1120px)" href="public/styles/desktop.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CPS ремонт</title>
+  </head>
+  <body>
+    <!-- Шапка для телефона/планшета -->
+    <header class="l-header">
+      <nav class="l-header__navbar navbar">
+        <ul class="navbar__left">
+          <li class="navbar__menu">
+            <button class='defaultButton' type="button">
+              <img alt="Открыть меню" src="public/images/burger.svg">
+            </button>
+          </li>
+          <li class="navbar__logo">
+            <a>
+              <img alt="Логотип компании CPS" width="97px" height="51px" src="public/favicon/CPS.svg">
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar__right">
+          <li class="navbar__call">
+            <button class='defaultButton' type="button">
+              <img alt="Позвонить в службу поддержки" src="public/images/call.svg">
+            </button>
+          </li>
+          <li class="navbar__chat">
+            <button class='defaultButton' type="button">
+              <img alt="Чат поддержки" src="public/images/chat.svg">
+            </button>
+          </li>
+          <li class="navbar__profile">
+            <button class='defaultButton' type="button">
+              <img alt="Мой профиль" src="public/images/profile.svg">
+            </button>
+          </li>
+          <li class="navbar__repair">
+            <button class='defaultButton' type="button">
+              <img alt="Оставить заявку на ремонт" src="public/images/repair.svg">
+            </button>
+          </li>
+          <li class="navbar__checkstatus">
+            <button class='defaultButton' type="button">
+              <img alt="Проверить статус ремонта" src="public/images/checkstatus.svg">
+            </button>
+          </li>
+      </nav>
+    </header>
+    <!-- Конец Шапки -->
+
+
+    <!-- Начало основной страницы -->
+    <main class="l-main">
+      <!-- Шапка для Десктопа -->
+      <header class="l-main__desktopHeader desktopHeader">
+        <h1 class="l-main__h1 desktopHeader__h1">Услуги и сервисы</h1>
+        <ul class="desktopHeader__list">
+          <li class="desktopHeader__repair">
+            <button class='desktopHeader__button defaultButton' type="button">
+              <p class='defaultButton__name'>Оставить заявку</p>
+              <img class='defaultButton__icon' alt="Оставить заявку на ремонт" src="public/images/repair.svg">
+            </button>
+          </li>
+          <li class="desktopHeader__checkstatus">
+            <button class='desktopHeader__button defaultButton' type="button">
+              <p class='defaultButton__name'>Статус ремонта</p>
+              <img class='defaultButton__icon' alt="Проверить статус ремонта" src="public/images/checkstatus.svg">
+            </button>
+          </li>
+        </ul>
+      </header>
+      <!-- Слайдер -->
+      <nav class="l-main__slider slider">
+        <ul class="slider__list">
+          <li class="slider__item">
+            <a class="slider__link">Ремонтируемые устройства</a>
+          </li>
+          <li class="slider__item">
+            <a class="slider__link">Дополнительные услуги</a>
+          </li>
+          <li class="slider__item">
+            <a class="slider__link">Цены на услуги</a>
+          </li>
+          <li class="slider__item">
+            <a class="slider__link">Адреса сервисных центров</a>
+          </li>
+          <li class="slider__item">
+            <a class="slider__link">Специальные цены</a>
+          </li>
+          <li class="slider__item">
+            <a class="slider__link">Отзывы</a>
+          </li>
+          <div class="slider__fader"></div>
+        </ul>
+      </nav>
+      <!-- Текстовая часть -->
+      <section class="l-main__section">
+        <article class="l-main__article">
+          <p class="l-main__p1">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+          <p class="l-main__p2">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class='l-main__desktopText'>, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
+          <button class='l-main__expandButton defaultButton' type="button"><p class="l-main__readNext">Читать далее</p></button>
+        </article>
+        <div class="l-main__pictureWraper">
+          <img class="l-main__picture" alt="Логотип компании CPS" src="public/images/Picture Copy.png">
+        </div>
+      </section>
+
+      <!-- Swiper -->
+      <section class="swiper">
+        <ul class="swiper__list">
+          <li class="swiper__slide"><img src="public/images/Lenovo.png" alt="Partner Company"></li>
+          <li class="swiper__slide"><img src="public/images/Lenovo.png" alt="Partner Company"></li>
+          <li class="swiper__slide"><img src="public/images/Lenovo.png" alt="Partner Company"></li>
+          <li class="swiper__slide"><img src="public/images/Lenovo.png" alt="Partner Company"></li>
+          <li class="swiper__slide"><img src="public/images/Lenovo.png" alt="Partner Company"></li>
+          <li class="swiper__slide"><img src="public/images/Lenovo.png" alt="Partner Company"></li>
+          <li class="swiper__slide"><img src="public/images/Lenovo.png" alt="Partner Company"></li>
+          <li class="swiper__slide"><img src="public/images/Lenovo.png" alt="Partner Company"></li>
+          <li class="swiper__slide"><img src="public/images/Lenovo.png" alt="Partner Company"></li>
+        </ul>
+        <div class="swiper__pagination"></div>
+      </section>
+    </main>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
