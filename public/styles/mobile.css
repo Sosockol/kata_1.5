@@ -278,6 +278,10 @@
   border-radius: 6px;
 }
 
+.swiper__icon {
+  display: block;
+}
+
 .swiper-pagination {
   top: 84px !important;
 }
