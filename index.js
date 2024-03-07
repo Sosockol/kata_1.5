@@ -6,16 +6,13 @@ const slider = new Swiper('.mySwiper', {
   },
 
   slidesPerView: 'auto',
+});
 
-  on: {
-    resize: function enableOnlyMobile(swiper) {
-      if (768 <= window.innerWidth) {
-        swiper.disable();
-        swiper.el.classList.add('-non-slider')
-      } else {
-        swiper.enable();
-        swiper.el.classList.remove('-non-slider');
-      }
-    }
+window.addEventListener("resize", () => {
+  if (768 <= window.innerWidth) {
+    document.querySelector('.swipable').hidden = true;
+  } else {
+    document.querySelector('.swipable').hidden = false;
   }
 });
+
