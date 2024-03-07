@@ -294,13 +294,14 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 16px 24px;
   height: 160px;
   overflow: hidden;
 }
 
 .expandable__item {
+  flex-grow: 1;
   width: 224px;
   height: 72px;
   box-sizing: border-box;
