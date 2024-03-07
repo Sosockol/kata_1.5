@@ -238,7 +238,7 @@
 
 /* Swipable */
 
-.swipable__title {
+.info__title {
   display: block;
   background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
   font-family: TT Lakes;
@@ -254,6 +254,7 @@
 .swiper {
   width: auto;
   height: 100px;
+  padding-right: 16px;
 }
 
 .swiper-wrapper {

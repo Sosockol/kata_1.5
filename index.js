@@ -10,9 +10,11 @@ const slider = new Swiper('.mySwiper', {
 
 window.addEventListener("resize", () => {
   if (768 <= window.innerWidth) {
-    document.querySelector('.swipable').hidden = true;
+    document.querySelector('.info__swiper').hidden = true;
+    document.querySelector('.info__expandable').hidden = false;
   } else {
-    document.querySelector('.swipable').hidden = false;
+    document.querySelector('.info__swiper').hidden = false;
+    document.querySelector('.info__expandable').hidden = true;
   }
 });
 
