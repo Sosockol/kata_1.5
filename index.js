@@ -1,13 +1,11 @@
 // Initialize swiper
-const slider = new Swiper('.swiper', {
+const slider = new Swiper('.mySwiper', {
   pagination: {
-    el: '.swiper__pagination',
+    el: '.swiper-pagination',
     clickable: true,
   },
 
   slidesPerView: 'auto',
-
-  spaceBetween: 16,
 
   on: {
     resize: function enableOnlyMobile(swiper) {
