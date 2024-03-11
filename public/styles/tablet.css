@@ -11,7 +11,6 @@
 }
 
 /* Кнопки */
-
 .defaultButton {
   padding: 0;
   border: none;
@@ -22,7 +21,6 @@
 }
 
 /* Левый кусок хедера */
-
 .navbar__left {
   display: flex;
   justify-content: space-between;
@@ -48,7 +46,6 @@
 }
 
 /* Для выравнивания всего хедера по иконкам */
-
 .navbar__logo {
   overflow: visible;
   height: 40px;
@@ -58,7 +55,6 @@
 }
 
 /* Правый кусок хедера */
-
 .navbar__right {
   display: flex;
   margin: 0;
@@ -98,7 +94,6 @@
 /* Конец хедера
 
 Начало основной страницы */
-
 .l-main {
   font-family: 'TT Lakes', sans-serif;
   color: #1B1C21;
@@ -130,7 +125,6 @@
 }
 
 /* Начало слайдера */
-
 .l-main__slider {
   position: relative;
 }
@@ -177,7 +171,6 @@
 }
 
 /* Это фикс Чтобы нажимался весь контейнер */
-
 .slider__link:before {
   content: '';
   position: absolute;
@@ -188,7 +181,6 @@
 }
 
 /* Это Блок имитирующий исчезновение сбоку */
-
 .slider__fader {
   position: absolute;
   right: 0;
@@ -205,7 +197,6 @@
 /* Конец слайдера
 
 Начало текста */
-
 .l-main__section {
   display: flex;
   margin-top: 32px;

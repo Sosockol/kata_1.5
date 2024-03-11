@@ -10,7 +10,6 @@ display: none;
 }
 
 /* Кнопки */
-
 .defaultButton {
   padding: 0;
   border: none;
@@ -21,7 +20,6 @@ display: none;
 }
 
 /* Левый кусок хедера */
-
 .navbar__left {
   display: flex;
   justify-content: space-between;
@@ -32,7 +30,6 @@ display: none;
 }
 
 /* Для выравнивания всего хедера по иконкам */
-
 .navbar__logo {
   overflow: visible;
   height: 40px;
@@ -42,7 +39,6 @@ display: none;
 }
 
 /* Начало основной страницы */
-
 .l-main {
   font-family: 'TT Lakes', sans-serif;
   color: #1B1C21;
@@ -126,7 +122,6 @@ display: none;
 }
 
 /* Начало слайдера */
-
 .slider__list {
   display: flex;
   justify-content: flex-start;
@@ -161,7 +156,6 @@ display: none;
 }
 
 /* Это фикс Чтобы нажимался весь контейнер */
-
 .slider__link:before {
   content: '';
   position: absolute;
@@ -176,8 +170,6 @@ display: none;
 }
 
 /* Начало текста */
-
-
 .l-main__section {
   display: flex;
   margin-top: 32px;

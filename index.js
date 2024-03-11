@@ -1,4 +1,3 @@
-// Initialize swiper
 const slider = new Swiper('.mySwiper', {
   pagination: {
     el: '.swiper-pagination',
@@ -8,7 +7,6 @@ const slider = new Swiper('.mySwiper', {
   slidesPerView: 'auto',
 });
 
-/* Ничего умнее не придумал что бы вначале не загружались сразу оба блока */
 const swiper = document.querySelector('.info__swiper');
 const expandable = document.querySelector('.info__expandable');
 const hideClass = 'hideClass'
@@ -37,7 +35,6 @@ window.addEventListener('resize', () => {
   }
 });
 
-// Expand кнопка
 const expandButton = expandable.querySelector('.expandable__button');
 const expandList = expandable.firstElementChild;
 const buttonParagraph = expandButton.lastElementChild;
